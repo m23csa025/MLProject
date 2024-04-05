@@ -115,8 +115,8 @@ train_dataset = datasets.USPS(root='./data', train=True, download=True, transfor
 # Load testing dataset
 test_dataset = datasets.USPS(root='./data', train=False, download=True, transform=transform)
 
-train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=50, shuffle=True)
-test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=50, shuffle=False)
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=100, shuffle=True)
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=100, shuffle=False)
 
 # Initialize models
 mlp_model = MyMLP()
